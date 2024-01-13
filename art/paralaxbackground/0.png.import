@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://nsx4725e1dlx"
-path="res://.godot/imported/6.png-781376741bcef96b8636950cea56fc92.ctex"
+uid="uid://chw2xe3g46lf0"
+path="res://.godot/imported/0.png-8462bb1e3b0c8c7f0ed826502d29c03d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://paralaxbackground/6.png"
-dest_files=["res://.godot/imported/6.png-781376741bcef96b8636950cea56fc92.ctex"]
+source_file="res://art/paralaxbackground/0.png"
+dest_files=["res://.godot/imported/0.png-8462bb1e3b0c8c7f0ed826502d29c03d.ctex"]
 
 [params]
 

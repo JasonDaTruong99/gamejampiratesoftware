@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3d0yn7ggdxqu"
-path="res://.godot/imported/CaveTiles2.png-5944a4018e2f3bae05cb6e4d798af8c3.ctex"
+uid="uid://cublb0ia6v31a"
+path="res://.godot/imported/Sword Up.png-00e0571172193bbc1ef034d005a00b4e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/CaveTiles2.png"
-dest_files=["res://.godot/imported/CaveTiles2.png-5944a4018e2f3bae05cb6e4d798af8c3.ctex"]
+source_file="res://art/playerart/Seperate Spritesheets/Sword Up.png"
+dest_files=["res://.godot/imported/Sword Up.png-00e0571172193bbc1ef034d005a00b4e.ctex"]
 
 [params]
 

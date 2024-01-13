@@ -1,3 +1,7 @@
-[gd_scene format=3 uid="uid://cc2ydcvj0msof"]
+[gd_scene load_steps=2 format=3 uid="uid://cc2ydcvj0msof"]
+
+[ext_resource type="PackedScene" uid="uid://cbs0bpufp2hp7" path="res://player/mckun.tscn" id="1_l3itv"]
 
 [node name="Tut" type="Node2D"]
+
+[node name="mckun" parent="." instance=ExtResource("1_l3itv")]

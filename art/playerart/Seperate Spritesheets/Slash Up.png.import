@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://o203keuknytp"
-path="res://.godot/imported/3.png-a0595eeb3e008948c8427179cce0edf4.ctex"
+uid="uid://b8vsueq18uabf"
+path="res://.godot/imported/Slash Up.png-eb442f77c4e2b585d2a5d93b31e5d555.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://paralaxbackground/3.png"
-dest_files=["res://.godot/imported/3.png-a0595eeb3e008948c8427179cce0edf4.ctex"]
+source_file="res://art/playerart/Seperate Spritesheets/Slash Up.png"
+dest_files=["res://.godot/imported/Slash Up.png-eb442f77c4e2b585d2a5d93b31e5d555.ctex"]
 
 [params]
 

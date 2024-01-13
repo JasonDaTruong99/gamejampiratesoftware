@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chw2xe3g46lf0"
-path="res://.godot/imported/0.png-1a7cfd0efa4e5da47ec3d4c247156169.ctex"
+uid="uid://bgsgrr2kfl0uf"
+path="res://.godot/imported/Sword Left.png-aac3b99a2c5b1d0d740131f6cf10452a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://paralaxbackground/0.png"
-dest_files=["res://.godot/imported/0.png-1a7cfd0efa4e5da47ec3d4c247156169.ctex"]
+source_file="res://art/playerart/Seperate Spritesheets/Sword Left.png"
+dest_files=["res://.godot/imported/Sword Left.png-aac3b99a2c5b1d0d740131f6cf10452a.ctex"]
 
 [params]
 

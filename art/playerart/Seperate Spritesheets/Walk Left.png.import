@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcejin0e30dbd"
-path="res://.godot/imported/2.png-25b51786164a131f08ac1ed6c3b9daae.ctex"
+uid="uid://c3wf30cxeadh7"
+path="res://.godot/imported/Walk Left.png-741f61b1593cbac02235f680938a0173.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://paralaxbackground/2.png"
-dest_files=["res://.godot/imported/2.png-25b51786164a131f08ac1ed6c3b9daae.ctex"]
+source_file="res://art/playerart/Seperate Spritesheets/Walk Left.png"
+dest_files=["res://.godot/imported/Walk Left.png-741f61b1593cbac02235f680938a0173.ctex"]
 
 [params]
 

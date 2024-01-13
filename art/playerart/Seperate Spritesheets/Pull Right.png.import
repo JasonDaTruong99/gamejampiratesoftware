@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2xybypkd4t36"
-path="res://.godot/imported/4.png-00e159fe6f2a83539a8cd08ed7f87d57.ctex"
+uid="uid://c07qwginndhrn"
+path="res://.godot/imported/Pull Right.png-b2be6a5809364c50a91a7c3e2ca040a1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://paralaxbackground/4.png"
-dest_files=["res://.godot/imported/4.png-00e159fe6f2a83539a8cd08ed7f87d57.ctex"]
+source_file="res://art/playerart/Seperate Spritesheets/Pull Right.png"
+dest_files=["res://.godot/imported/Pull Right.png-b2be6a5809364c50a91a7c3e2ca040a1.ctex"]
 
 [params]
 

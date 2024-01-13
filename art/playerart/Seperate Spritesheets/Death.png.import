@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx1sho3n4e6c"
-path="res://.godot/imported/CaveTiles1.png-dd7d76982eb731fe92ac227979fcdb68.ctex"
+uid="uid://b7r0rfun5bmcj"
+path="res://.godot/imported/Death.png-55f7dadcfb044b66c6a556fa433da118.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/CaveTiles1.png"
-dest_files=["res://.godot/imported/CaveTiles1.png-dd7d76982eb731fe92ac227979fcdb68.ctex"]
+source_file="res://art/playerart/Seperate Spritesheets/Death.png"
+dest_files=["res://.godot/imported/Death.png-55f7dadcfb044b66c6a556fa433da118.ctex"]
 
 [params]
 

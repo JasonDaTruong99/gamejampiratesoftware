@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bdnbtopsxsvm7"
-path="res://.godot/imported/CrystalTiles.png-2bd296186765d88300dbad284ea5db19.ctex"
+uid="uid://dcejin0e30dbd"
+path="res://.godot/imported/2.png-f2579800b796d689e7d0f819428e7660.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://tiles/CrystalTiles.png"
-dest_files=["res://.godot/imported/CrystalTiles.png-2bd296186765d88300dbad284ea5db19.ctex"]
+source_file="res://art/paralaxbackground/2.png"
+dest_files=["res://.godot/imported/2.png-f2579800b796d689e7d0f819428e7660.ctex"]
 
 [params]
 
