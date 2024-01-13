@@ -1,11 +1,20 @@
-[gd_scene load_steps=2 format=3 uid="uid://hexto4ujp354"]
+[gd_scene load_steps=3 format=3 uid="uid://hexto4ujp354"]
 
 [ext_resource type="Script" path="res://menu scenes/mainMenu.gd" id="1_ilmrc"]
+[ext_resource type="Texture2D" uid="uid://chw2xe3g46lf0" path="res://paralaxbackground/0.png" id="8_4fu15"]
 
 [node name="Game" type="Node2D"]
 script = ExtResource("1_ilmrc")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_4fu15")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
 anchors_preset = 8

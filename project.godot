@@ -13,7 +13,6 @@ config_version=5
 config/name="TunnelVirusDotExe"
 run/main_scene="res://menu scenes/mainMenu.tscn"
 config/features=PackedStringArray("4.2", "Mobile")
-config/icon="res://icon.svg"
 
 [autoload]
 
