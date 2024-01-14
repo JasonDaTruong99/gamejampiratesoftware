@@ -3,6 +3,8 @@ extends CharacterBody2D
 @export var speed: int = 60
 @onready var animated_sprite_2d = $AnimatedSprite2D
 
+var mainChar: PartyChar = PartyChar.new()
+
 func movement():
 	var modeDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
 	velocity = modeDirection*speed
