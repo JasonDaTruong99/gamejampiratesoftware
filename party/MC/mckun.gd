@@ -1,9 +1,8 @@
 extends CharacterBody2D
 
-@export var speed: int = 60
+@export var speed: int = 64
 @onready var animated_sprite_2d = $AnimatedSprite2D
-
-var mainChar: PartyChar = PartyChar.new()
+#@onready var follow = $follow
 
 func movement():
 	var modeDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
@@ -25,3 +24,6 @@ func movement():
 func _physics_process(delta):
 	movement()
 	move_and_slide()
+
+#func _process(delta):
+	#follow.position = position
