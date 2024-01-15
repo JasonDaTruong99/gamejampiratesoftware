@@ -1,13 +1,22 @@
 extends CharacterBody2D
 
-@export var speed: int = 64
+const ACCEL: int = 40
+const MAX_SPEED: int = 80
+const FRICTION: int = 75
 @onready var animated_sprite_2d = $AnimatedSprite2D
+@onready var abilities = $abilities
 #@onready var follow = $follow
 
-func movement():
-	var modeDirection = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")
-	velocity = modeDirection*speed
+func _physics_process(delta):
+	var inputVector = Vector2.ZERO
+	inputVector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")
+	inputVector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
+	inputVector = inputVector.normalized()
 	
+	if inputVector != Vector2.ZERO:
+		velocity = velocity.move_toward(inputVector * MAX_SPEED, ACCEL * delta)
+	else:
+		velocity = velocity.move_toward(Vector2.ZERO,FRICTION * delta)
 	if velocity.x < 0:
 		#animated_sprite_2d.flip_h
 		animated_sprite_2d.play('walkLeft')
@@ -20,10 +29,7 @@ func movement():
 	else:
 		animated_sprite_2d.stop()
 		
-
-func _physics_process(delta):
-	movement()
-	move_and_slide()
+	move_and_collide(velocity)
 
 #func _process(delta):
 	#follow.position = position

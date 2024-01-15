@@ -1,13 +1,14 @@
-[gd_resource type="Resource" script_class="PartyChar" load_steps=2 format=3 uid="uid://h7uoejy5nbvc"]
+[gd_resource type="Resource" script_class="PartyChar" load_steps=2 format=3 uid="uid://c3eeogml278e5"]
 
 [ext_resource type="Script" path="res://scripts/PartyChar.gd" id="1_ujhli"]
 
 [resource]
 script = ExtResource("1_ujhli")
-name = "MC-Kun"
+name = "placeholder"
 level = 0
 stats = {
 "Body": 10,
+"Corruption": 100,
 "Logos": 10,
 "Luck": 10,
 "Speed": 10
