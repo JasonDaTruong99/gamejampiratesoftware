@@ -4,8 +4,11 @@ const ACCEL: int = 40
 const MAX_SPEED: int = 80
 const FRICTION: int = 75
 @onready var animated_sprite_2d = $AnimatedSprite2D
-#@onready var abilities = $abilities
+@onready var info = $CharData
 #@onready var follow = $follow
+
+func print():
+	info.printStats()
 
 func _physics_process(delta):
 	var inputVector = Vector2.ZERO
@@ -33,4 +36,3 @@ func _physics_process(delta):
 
 #func _process(delta):
 	#follow.position = position
-

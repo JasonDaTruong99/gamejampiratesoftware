@@ -229,3 +229,4 @@ layer_2/tile_data = PackedInt32Array(458757, 1, 1, 458758, 1, 1, 458765, 65537, 
 [node name="mckun" parent="." instance=ExtResource("1_l3itv")]
 
 [editable path="mckun"]
+[editable path="mckun/CharData"]

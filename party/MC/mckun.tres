@@ -1,7 +1,7 @@
-[gd_resource type="Resource" script_class="PartyChar" load_steps=2 format=3 uid="uid://c3eeogml278e5"]
+[gd_resource type="Resource" script_class="PartyChar" load_steps=2 format=3 uid="uid://yvy520eopmlp"]
 
 [ext_resource type="Script" path="res://scripts/PartyChar.gd" id="1_ujhli"]
 
 [resource]
 script = ExtResource("1_ujhli")
-level = 0
+level = 1
