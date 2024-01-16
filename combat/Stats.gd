@@ -20,11 +20,12 @@ func initStats():
 	basicData.stats["Speed"] = 5
 	basicData.stats["Logos"] = 5 
 	basicData.stats["Luck"] = 5
+	basicData.level = 1
 
 func calcMaxHealth():
-	var maxHealth = 8 + (basicData.Stats["Body"] * basicData.level * 1.3)
+	var maxHealth = 8 + (basicData.stats["Body"] * basicData.level * 1.3)
 	return maxHealth
 
 func calcMaxMana():
-	var maxMana = 8 + (basicData.Stats["Logos"] * basicData.level * 1.3)
+	var maxMana = 8 + (basicData.stats["Logos"] * basicData.level * 1.3)
 	return maxMana

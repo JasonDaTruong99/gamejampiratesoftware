@@ -3,7 +3,7 @@ extends Resource
 class_name PartyChar
 
 var name: String = "placeholder"
-var level: int
+@export var level: int
 
 var stats = {
 	"Body": 10,
