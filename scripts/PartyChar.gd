@@ -3,7 +3,7 @@ extends Resource
 class_name PartyChar
 
 var name: String = "placeholder"
-@export var level: int
+@export var level: int = 1
 
 var stats = {
 	"Body": 10,
@@ -14,6 +14,5 @@ var stats = {
 }
 
 func initializeChar():
-	var level = 1
-	var name = "placeholder"
+	level = 1
 	var newStats = stats.duplicate()
