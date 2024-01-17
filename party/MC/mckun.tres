@@ -5,3 +5,10 @@
 [resource]
 script = ExtResource("1_ujhli")
 level = 1
+stats = {
+"Body": 10,
+"Corruption": 100,
+"Luck": 10,
+"Mind": 10,
+"Speed": 10
+}

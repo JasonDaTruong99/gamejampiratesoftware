@@ -2,11 +2,11 @@
 extends Node
 
 class_name CharData
-
-@export var party_char: Resource
+var charData = PartyChar.new()
 @onready var basic_info = $BasicData
 
-var stats = party_char.stats.duplicate
 
-func printStats():
-	print(stats["Body"])
+func getLevel(charLevel):
+	charLevel = charData.passCharLevel(charLevel)
+	return charLevel
+	

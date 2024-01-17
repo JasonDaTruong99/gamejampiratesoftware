@@ -5,11 +5,16 @@ const MAX_SPEED: int = 80
 const FRICTION: int = 75
 @onready var animated_sprite_2d = $AnimatedSprite2D
 @onready var info = $CharData
+@export var charInfo: Resource
 #@onready var follow = $follow
 
-func print():
-	info.printStats()
+var level = baseLevel()
 
+func baseLevel():
+	level = charInfo.passCharLevel(1)
+	print(level)
+	return level
+	
 func _physics_process(delta):
 	var inputVector = Vector2.ZERO
 	inputVector.x = Input.get_action_strength("ui_right") - Input.get_action_strength("ui_left")

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo4xyblyw8b64"]
+
+[ext_resource type="Script" path="res://scripts/CharData.gd" id="1_q6sm8"]
+[ext_resource type="Script" path="res://combat/Stats.gd" id="2_jd8ln"]
+
+[node name="CharData" type="Node"]
+script = ExtResource("1_q6sm8")
+party_char = null
+
+[node name="BasicData" type="Node" parent="."]
+script = ExtResource("2_jd8ln")

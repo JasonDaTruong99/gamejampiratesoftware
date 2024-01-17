@@ -15,14 +15,22 @@ var maxLogos: int
 	"Corruption": 100
 }
 
-func _init():
-	level = 1
-	var newStats = stats.duplicate()
+func passCharLevel(value):
+	level = value
+	return level
+	
+func passCharStats(body, speed, mind, luck, corruption):
+	stats["Body"] = body
+	stats["Speed"] = speed
+	stats["Mind"] = mind
+	stats["Luck"] = luck
+	stats["Corruption"] = corruption
+	return stats
 
-func calcMaxHealth(body, level):
-	maxHealth = 8 + (body * level * 1.3)
+func calcMaxHealth(charscaling, levelscaling):
+	maxHealth = 8 + (charscaling * levelscaling * 1.3)
 	return maxHealth
 
-func calcMaxLogos(mind, level):
-	maxLogos = 8 + (mind * level * 1.3)
+func calcMaxLogos(charscaling, levelscaling):
+	maxLogos = 8 + (charscaling * levelscaling * 1.3)
 	return maxLogos
