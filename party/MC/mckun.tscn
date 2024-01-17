@@ -1,8 +1,8 @@
 [gd_scene load_steps=58 format=3 uid="uid://cbs0bpufp2hp7"]
 
 [ext_resource type="Script" path="res://party/MC/mckun.gd" id="1_cb4mj"]
-[ext_resource type="Resource" uid="uid://ddci41np8wkd2" path="res://scripts/charresource.tres" id="2_3iwmt"]
 [ext_resource type="Texture2D" uid="uid://ucmpwwbg7yaf" path="res://art/playerart/Seperate Spritesheets/Walk Down.png" id="2_g7t60"]
+[ext_resource type="Resource" uid="uid://yvy520eopmlp" path="res://party/MC/mckun.tres" id="2_uh2ra"]
 [ext_resource type="Texture2D" uid="uid://c3wf30cxeadh7" path="res://art/playerart/Seperate Spritesheets/Walk Left.png" id="3_dsgxi"]
 [ext_resource type="Texture2D" uid="uid://cnxl4yikgyv3w" path="res://art/playerart/Seperate Spritesheets/Walk Right.png" id="4_ndwrd"]
 [ext_resource type="Texture2D" uid="uid://d2u4e0xsnh1s3" path="res://art/playerart/Seperate Spritesheets/Walk Up.png" id="5_u4xmh"]
@@ -372,7 +372,7 @@ size = Vector2(14, 16)
 
 [node name="mckun" type="CharacterBody2D"]
 script = ExtResource("1_cb4mj")
-charInfo = ExtResource("2_3iwmt")
+charInfo = ExtResource("2_uh2ra")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(332, 117)

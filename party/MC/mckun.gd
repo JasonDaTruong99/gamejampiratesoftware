@@ -11,7 +11,8 @@ const FRICTION: int = 75
 var level = baseLevel()
 
 func baseLevel():
-	level = charInfo.passCharLevel(1)
+	var stats = preload("res://party/MC/mckun.tres")
+	level = stats.passCharLevel(5)
 	print(level)
 	return level
 	
