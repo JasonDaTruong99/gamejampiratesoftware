@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cc2ydcvj0msof"]
+[gd_scene load_steps=20 format=3 uid="uid://cc2ydcvj0msof"]
 
 [ext_resource type="PackedScene" uid="uid://cbs0bpufp2hp7" path="res://party/MC/mckun.tscn" id="1_l3itv"]
 [ext_resource type="Texture2D" uid="uid://bdnbtopsxsvm7" path="res://art/tiles/CrystalTiles.png" id="2_6fjo7"]
 [ext_resource type="Texture2D" uid="uid://dx1sho3n4e6c" path="res://art/tiles/CaveTiles1.png" id="2_r8h5c"]
-[ext_resource type="Script" path="res://party/MC/McKunt.gd" id="4_1aivq"]
+[ext_resource type="PackedScene" uid="uid://u3oon015oi48" path="res://combat/enemey.tscn" id="4_lpvv4"]
+[ext_resource type="Texture2D" uid="uid://ddwndjthw8llt" path="res://art/Char_3.png" id="5_ng0x2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tulmx"]
 texture = ExtResource("2_r8h5c")
@@ -215,6 +216,80 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_tulmx")
 sources/1 = SubResource("TileSetAtlasSource_xc34t")
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_w22cj"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_07x61"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lhtox"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ru00"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dm6yn"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uurrc"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xnpp7"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e6jht"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xjhg6"]
+atlas = ExtResource("5_ng0x2")
+region = Rect2(512, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gc60b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w22cj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_07x61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lhtox")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ru00")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dm6yn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uurrc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xnpp7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e6jht")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xjhg6")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o56f5"]
+size = Vector2(14, 25)
+
 [node name="Tut" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -235,16 +310,18 @@ position = Vector2(280, 82)
 [node name="CollisionShape2D" parent="mckun" index="1"]
 position = Vector2(280, 82)
 
-[node name="McKunt" parent="." instance=ExtResource("1_l3itv")]
-script = ExtResource("4_1aivq")
+[node name="CharacterBody2D" parent="." instance=ExtResource("4_lpvv4")]
 
-[node name="AnimatedSprite2D" parent="McKunt" index="0"]
-position = Vector2(352, 89)
+[node name="AnimatedSprite2D" parent="CharacterBody2D" index="0"]
+position = Vector2(383.5, 95.75)
+scale = Vector2(0.609375, 0.507812)
+sprite_frames = SubResource("SpriteFrames_gc60b")
+flip_h = true
 
-[node name="CollisionShape2D" parent="McKunt" index="1"]
-position = Vector2(352, 89)
+[node name="CollisionShape2D" parent="CharacterBody2D" index="1"]
+position = Vector2(384, 95.5)
+shape = SubResource("RectangleShape2D_o56f5")
 
 [editable path="mckun"]
 [editable path="mckun/CharData"]
-[editable path="McKunt"]
-[editable path="McKunt/CharData"]
+[editable path="CharacterBody2D"]
