@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="PartyChar" load_steps=2 format=3 uid="uid://baahklced886g"]
+
+[ext_resource type="Script" path="res://scripts/PartyChar.gd" id="1_52ooq"]
+
+[resource]
+script = ExtResource("1_52ooq")
+level = 1
+stats = {
+"Body": 10,
+"Corruption": 100,
+"Luck": 10,
+"Mind": 10,
+"Speed": 10
+}

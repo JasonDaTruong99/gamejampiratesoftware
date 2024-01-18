@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cc2ydcvj0msof"]
+[gd_scene load_steps=8 format=3 uid="uid://cc2ydcvj0msof"]
 
 [ext_resource type="PackedScene" uid="uid://cbs0bpufp2hp7" path="res://party/MC/mckun.tscn" id="1_l3itv"]
 [ext_resource type="Texture2D" uid="uid://bdnbtopsxsvm7" path="res://art/tiles/CrystalTiles.png" id="2_6fjo7"]
 [ext_resource type="Texture2D" uid="uid://dx1sho3n4e6c" path="res://art/tiles/CaveTiles1.png" id="2_r8h5c"]
+[ext_resource type="Script" path="res://party/MC/McKunt.gd" id="4_1aivq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tulmx"]
 texture = ExtResource("2_r8h5c")
@@ -234,5 +235,16 @@ position = Vector2(280, 82)
 [node name="CollisionShape2D" parent="mckun" index="1"]
 position = Vector2(280, 82)
 
+[node name="McKunt" parent="." instance=ExtResource("1_l3itv")]
+script = ExtResource("4_1aivq")
+
+[node name="AnimatedSprite2D" parent="McKunt" index="0"]
+position = Vector2(352, 89)
+
+[node name="CollisionShape2D" parent="McKunt" index="1"]
+position = Vector2(352, 89)
+
 [editable path="mckun"]
 [editable path="mckun/CharData"]
+[editable path="McKunt"]
+[editable path="McKunt/CharData"]
