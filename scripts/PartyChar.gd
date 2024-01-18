@@ -15,7 +15,7 @@ var maxLogos: int
 	"Corruption": 100
 }
 
-func passCharLevel(value):
+func initLevel(value):
 	level = value
 	return level
 	
@@ -28,9 +28,14 @@ func passCharStats(body, speed, mind, luck, corruption):
 	return stats
 
 func calcMaxHealth(charscaling, levelscaling):
-	maxHealth = 8 + (charscaling * levelscaling * 1.3)
+	maxHealth = round(8 + (charscaling * levelscaling * 1.3))
 	return maxHealth
 
 func calcMaxLogos(charscaling, levelscaling):
-	maxLogos = 8 + (charscaling * levelscaling * 1.3)
+	maxLogos = round(8 + (charscaling * levelscaling * 1.3))
 	return maxLogos
+
+func calcAttackDamage(bodystat, weapon):
+	var damage = round((bodystat * 4/3) + weapon * 5/9)
+	return damage
+

@@ -228,5 +228,11 @@ layer_2/tile_data = PackedInt32Array(458757, 1, 1, 458758, 1, 1, 458765, 65537, 
 
 [node name="mckun" parent="." instance=ExtResource("1_l3itv")]
 
+[node name="AnimatedSprite2D" parent="mckun" index="0"]
+position = Vector2(280, 82)
+
+[node name="CollisionShape2D" parent="mckun" index="1"]
+position = Vector2(280, 82)
+
 [editable path="mckun"]
 [editable path="mckun/CharData"]
