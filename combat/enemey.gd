@@ -1,5 +1,5 @@
 extends CharacterBody2D
-var stats = preload("res://party/MC/McKunt.tres")
+var stats = preload("res://party/MC/mckun.tres")
 
 const ACCEL: int = 40
 const MAX_SPEED: int = 80
@@ -30,23 +30,10 @@ func _physics_process(delta):
 		velocity = velocity.move_toward(inputVector * MAX_SPEED, ACCEL * delta)
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO,FRICTION * delta)
-	if velocity.x < 0:
-		#animated_sprite_2d.flip_h
-		animated_sprite_2d.play('walkLeft')
-	elif velocity.x > 0:
-		animated_sprite_2d.play('walkRight')
-	elif velocity.y > 0:
-		animated_sprite_2d.play('walkDown')
-	elif velocity.y < 0:
-		animated_sprite_2d.play('walkUp')
-	else:
-		animated_sprite_2d.stop()
 		
 	move_and_slide()
 	handleCollision()
 
-#func _process(delta):
-	#follow.position = position
 
 func handleCollision():
 	for i in get_slide_collision_count():
@@ -54,4 +41,4 @@ func handleCollision():
 		var collider = collision.get_collider()
 		if(collider.name not in "TileMap"):
 			print_debug(collider.name)
-		
+

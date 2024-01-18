@@ -1,10 +1,11 @@
-[gd_scene load_steps=20 format=3 uid="uid://cc2ydcvj0msof"]
+[gd_scene load_steps=21 format=3 uid="uid://cc2ydcvj0msof"]
 
 [ext_resource type="PackedScene" uid="uid://cbs0bpufp2hp7" path="res://party/MC/mckun.tscn" id="1_l3itv"]
 [ext_resource type="Texture2D" uid="uid://bdnbtopsxsvm7" path="res://art/tiles/CrystalTiles.png" id="2_6fjo7"]
 [ext_resource type="Texture2D" uid="uid://dx1sho3n4e6c" path="res://art/tiles/CaveTiles1.png" id="2_r8h5c"]
-[ext_resource type="PackedScene" uid="uid://u3oon015oi48" path="res://combat/enemey.tscn" id="4_lpvv4"]
+[ext_resource type="PackedScene" path="res://combat/enemey.tscn" id="4_lpvv4"]
 [ext_resource type="Texture2D" uid="uid://ddwndjthw8llt" path="res://art/Char_3.png" id="5_ng0x2"]
+[ext_resource type="Script" path="res://combat/enemey.gd" id="5_rm145"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tulmx"]
 texture = ExtResource("2_r8h5c")
@@ -288,7 +289,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o56f5"]
-size = Vector2(14, 25)
+size = Vector2(25, 25)
 
 [node name="Tut" type="Node2D"]
 
@@ -310,18 +311,19 @@ position = Vector2(280, 82)
 [node name="CollisionShape2D" parent="mckun" index="1"]
 position = Vector2(280, 82)
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("4_lpvv4")]
+[node name="McKunt" parent="." instance=ExtResource("4_lpvv4")]
+script = ExtResource("5_rm145")
 
-[node name="AnimatedSprite2D" parent="CharacterBody2D" index="0"]
+[node name="AnimatedSprite2D" parent="McKunt" index="0"]
 position = Vector2(383.5, 95.75)
 scale = Vector2(0.609375, 0.507812)
 sprite_frames = SubResource("SpriteFrames_gc60b")
 flip_h = true
 
-[node name="CollisionShape2D" parent="CharacterBody2D" index="1"]
+[node name="CollisionShape2D" parent="McKunt" index="1"]
 position = Vector2(384, 95.5)
 shape = SubResource("RectangleShape2D_o56f5")
 
 [editable path="mckun"]
 [editable path="mckun/CharData"]
-[editable path="CharacterBody2D"]
+[editable path="McKunt"]
